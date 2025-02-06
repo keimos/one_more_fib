@@ -1,6 +1,6 @@
 # This is one more Fibonacci example.
 
-def PrintFibonacci(length):
+def print_fibonacci(length):
     # Initial variable
     first = 0
     second = 1
@@ -26,5 +26,5 @@ def PrintFibonacci(length):
 # Press the green button in the gutter to run the script.
 if __name__ == '__main__':
     print('Fibonacci Series: ')
-    PrintFibonacci(13)
+    print_fibonacci(13)
     pass
