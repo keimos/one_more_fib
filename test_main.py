@@ -1,5 +1,5 @@
 import pytest
-from main import PrintFibonacci, fibonacci
+from main import print_fibonacci, fibonacci
 
 
 # First unit test
