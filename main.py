@@ -3,7 +3,7 @@
 def print_fibonacci(length):
     """Print Fibonacci series."""
     if length <= 0:
-        print("Length")
+        print("Length must be a positive integer.")
         return
     
     # Initial vathe first two numbers in the sequence
