@@ -1,30 +1,23 @@
 # This is one more Fibonacci example.
 
 def print_fibonacci(length):
-    # Initial variable
-    first = 0
-    second = 1
+    """Print Fibonacci series."""
+    if length <= 0:
+        print("Length")
+        return
+    
+    # Initial vathe first two numbers in the sequence
+    first, second = 0, 1
 
-    # Printing the initial Fibonacci number
+    # Print the initial Fibonacci number
     print(first, second, end=" ")
 
-    # Decrease the length by 2 as we printed
-    length -= 2
-
-    # Loop until length is 0
-    while length > 0:
-
-        print(first + second, end=" ")
-
-        temp = second
-        second = first + second
-        first = temp
-
-        length -= 1
-
-
-# Press the green button in the gutter to run the script.
+    # Generate and print the remaiing sequence
+    for _ in range(length - 2):
+        next_number = first + second
+        print(next_number, end=" ")
+        first, second = second, next_number
+        
 if __name__ == '__main__':
     print('Fibonacci Series: ')
     print_fibonacci(13)
-    pass
