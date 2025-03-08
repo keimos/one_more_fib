@@ -8,7 +8,13 @@ def test_print_fibonacci_length_zero(capsys):
     assert "Length" in captured.out
 
 def test_print_fibonacci_length_one(capsys):
-    """test with length = 1."""
+    """Test with length = 1."""
     print_fibonacci(1)
     captured = capsys.readouterr()
     assert captured.out.strip() == "0 1"
+
+def test_print_fibonacci_length_five(capsys):
+    """Test with a length of 5."""
+    print_fibonacci(5)
+    captured = capsys.readouterr()
+    assert captured.out.strip() == "0 1 1 2 3"
